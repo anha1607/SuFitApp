@@ -25,7 +25,7 @@ namespace SuFitApp.Droid.DBOperation
         public List<Person> DBCall(List<Person> list)
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM person";
+            cmd.CommandText = "SELECT * FROM person WHERE id=1";
             try
             {
                 conn.Open();
@@ -33,7 +33,7 @@ namespace SuFitApp.Droid.DBOperation
 
                 while (dr.Read())
                 {
-                    list.Add(new Person(dr["firstname"].ToString(), dr["lastname"].ToString()));
+                    list.Add(new Person(dr.GetInt32(dr.GetOrdinal("id")),dr["firstname"].ToString(), dr["lastname"].ToString()));
                 }
 
                 return list;

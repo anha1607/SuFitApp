@@ -14,7 +14,7 @@ namespace SuFitApp.Droid.DBClasses
 {
     public class Person
     {
-        public int id { get; set; }
+        public int Id { get; set; }
         public string Firstname { get; set; }
         public string Lastname { get; set; }
         public int Gender { get; set; }
@@ -33,10 +33,11 @@ namespace SuFitApp.Droid.DBClasses
             AllPersons = new List<Person>();
         }
 
-        public Person(string firstname, string lastname)
+        public Person(int id,string firstname, string lastname)
         {
-            firstname = Firstname;
-            lastname = Lastname;
+            Id = id;
+            Firstname = firstname;
+            Lastname = lastname;
         }
     }
 }
