@@ -59,7 +59,18 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBClasses\Activitycategories.cs" />
+    <Compile Include="DBClasses\Diet.cs" />
+    <Compile Include="DBClasses\Goal.cs" />
+    <Compile Include="DBClasses\Gymactivitys.cs" />
+    <Compile Include="DBClasses\Meal.cs" />
+    <Compile Include="DBClasses\Otheractivitys.cs" />
     <Compile Include="DBClasses\Person.cs" />
+    <Compile Include="DBClasses\Ranking.cs" />
+    <Compile Include="DBClasses\Totalgymactivitys.cs" />
+    <Compile Include="DBClasses\Trainingmachine.cs" />
+    <Compile Include="DBClasses\Typeofmeal.cs" />
+    <Compile Include="DBClasses\Workout.cs" />
     <Compile Include="DBOperation\DBConn.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
