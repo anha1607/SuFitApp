@@ -25,7 +25,7 @@ namespace SuFitApp.Droid.DBOperation
         public List<Person> DBCall(List<Person> list)
         {
             cmd = conn.CreateCommand();
-            cmd.CommandText = "SELECT * FROM person WHERE id=1";
+            cmd.CommandText = "SELECT * FROM person";
             try
             {
                 conn.Open();
